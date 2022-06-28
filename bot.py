@@ -7,6 +7,8 @@ import traceback
 
 import aiohttp
 import discord
+import random
+import DateTime
 from discord.ext import commands
 from discord.ext.commands import ExtensionFailed, ExtensionNotFound, NoEntryPointError
 from dotenv import load_dotenv
@@ -55,9 +57,19 @@ class ValorantBot(commands.Bot):
         print(f"Version: {self.bot_version}")
         
         # bot presence
+        #listening
         activity_type = discord.ActivityType.listening
         await self.change_presence(status=discord.Status.idle, activity=discord.Activity(type=activity_type, name="4ly's heart <3")) #original (╯•﹏•╰)
-    
+        await asyncio.sleep(5)
+        #watching
+        activity_type = discord.ActivityType.watching
+        await self.change_presence(status=discord.Status.idle, activity=discord.Activity(type=activity_type, name="my beautiful 4ly <3")) #original (╯•﹏•╰)
+        await asyncio.sleep(5)
+        #playing
+        activity_type = discord.Game
+        await self.change_presence(status=discord.Status.idle, activity=discord(type=activity_type, name="i will never lose you")) #original (╯•﹏•╰)
+        await asyncio.sleep(5)
+        
     async def setup_hook(self) -> None:
         self.session = aiohttp.ClientSession()
         
