@@ -66,7 +66,7 @@ listening = discord.ActivityType.listening
 
 @tasks.loop(seconds=30)
 async def status_swap():
-    await client.change_presence(activity=discord.Game(next(status)))
+    await client.change_presence(status=discord.Status.idle, activity=discord.Game(next(status)))
 
 @client.event
 async def on_ready():
