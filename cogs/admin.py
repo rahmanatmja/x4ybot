@@ -59,7 +59,7 @@ class Admin(commands.Cog):
         
         owner_url = f'https://discord.com/users/231680517538316289'
         support_url = f'https://discord.com/users/231680517538316289'
-        
+
         embed = discord.Embed(color=0xffffff)
         embed.set_author(name='x4ybot')
         embed.set_thumbnail(url='https://i.pinimg.com/564x/85/d0/cf/85d0cf29430134ebf85d76f6bcd52c51.jpg')
