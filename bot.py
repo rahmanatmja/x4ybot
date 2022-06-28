@@ -60,6 +60,15 @@ class ValorantBot(commands.Bot):
         activity_type = discord.ActivityType.listening
         status_idle = discord.Status.idle
         await self.change_presence(status=discord.Status(type=status_idle), activity=discord.Activity(type=activity_type, name="4ly's heart ❤️")) #original (╯•﹏•╰)
+        await asyncio.sleep(5)
+
+        status_dnd = discord.Status.do_not_disturb
+        await self.change_presence(status=discord.Status(type=status_dnd), activity=discord.Activity(type=activity_type, name="my beautiful 4ly ❤️")) #original (╯•﹏•╰)
+        await asyncio.sleep(5)
+
+        status_invis = discord.Status.invisible
+        await self.change_presence(status=discord.Status(type=status_invis), activity=discord.Game("I Love You 4ly ❤️")) #original (╯•﹏•╰)
+        await asyncio.sleep(5)
 
     async def setup_hook(self) -> None:
         self.session = aiohttp.ClientSession()
