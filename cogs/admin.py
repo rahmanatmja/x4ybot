@@ -86,6 +86,8 @@ class Admin(commands.Cog):
         )
         view = ui.View()
         view.add_item(ui.Button(label='Saweria', url='https://saweria.co/xaynaver', row=0))
+        view = ui.View()
+        view.add_item(ui.Button(label='Instagram', url='https://instagram.com/nekonug._', row=0))
         
         await interaction.response.send_message(embed=embed, view=view)
 
