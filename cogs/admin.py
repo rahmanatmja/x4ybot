@@ -58,6 +58,7 @@ class Admin(commands.Cog):
         """ Shows basic information about the bot. """
         
         owner_url = f'https://discord.com/users/231680517538316289'
+        support_url = f'https://discord.com/users/231680517538316289'
         
         embed = discord.Embed(color=0xffffff)
         embed.set_author(name='x4ybot')
@@ -87,7 +88,8 @@ class Admin(commands.Cog):
         view = ui.View()
         view.add_item(ui.Button(label='ꜱᴀᴡᴇʀɪᴀ', url='https://saweria.co/xaynaver', row=0))
         view.add_item(ui.Button(label='ɪɴꜱᴛᴀɢʀᴀᴍ', url='https://instagram.com/nekonug._', row=0))
-        
+        view.add_item(ui.Button(label='ꜱᴜᴘᴘᴏʀᴛ ꜱᴇʀᴠᴇʀ', url=support_url, row=0))
+
         await interaction.response.send_message(embed=embed, view=view)
 
 
