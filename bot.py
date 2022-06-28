@@ -59,7 +59,7 @@ class ValorantBot(commands.Bot):
         # bot presence
         activity_type = discord.ActivityType.listening
         status_idle = discord.Status.idle
-        await self.change_presence(status=discord.Status(type=status_idle), activity=discord.Activity(type=activity_type, name="4ly's heart <3")) #original (╯•﹏•╰)
+        await self.change_presence(status=discord.Status(type=status_idle), activity=discord.Activity(type=activity_type, name="4ly's heart ❤️")) #original (╯•﹏•╰)
         await asyncio.sleep(5)
         # watching
         activity_type = discord.ActivityType.watching
@@ -68,7 +68,8 @@ class ValorantBot(commands.Bot):
         await asyncio.sleep(5)
         # playing
         activity_type = discord.Game
-        await self.change_presence(status=discord.Status(type=status_idle), activity=discord(type=activity_type, name="I Love My Girlfriend❤️")) #original (╯•﹏•╰)
+        status_invisible = discord.Status.invisible
+        await self.change_presence(status=discord.Status(type=status_invisible), activity=discord(type=activity_type, name="I Love My Girlfriend❤️")) #original (╯•﹏•╰)
         await asyncio.sleep(5)
 
     async def setup_hook(self) -> None:
