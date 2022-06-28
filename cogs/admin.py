@@ -63,8 +63,13 @@ class Admin(commands.Cog):
         embed.set_author(name='x4ybot')
         embed.set_thumbnail(url='https://i.pinimg.com/564x/85/d0/cf/85d0cf29430134ebf85d76f6bcd52c51.jpg')
         embed.add_field(
-            name='DEPLOYED BY:',
+            name='ᴅᴇᴘʟᴏʏᴇᴅ ʙʏ:',
             value=f"[xaynaver#1446]({owner_url})",
+            inline=False
+        )
+        embed.add_field(
+            name='ᴅᴇᴠᴇʟᴏᴘᴇʀ:',
+            value=f"[ꜱᴛᴀᴄɪᴀ.#7475](https://discord.com/users/240059262297047041)",
             inline=False
         )
         embed.add_field(
